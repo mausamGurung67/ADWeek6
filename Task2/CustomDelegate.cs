@@ -21,6 +21,9 @@ namespace Task2
         public static double SeasonalDiscount(double price) => price - (price * 0.10); 
         public static double NoDiscount(double price) => price;
 
+        //question2.1
+        public static double CalculateFinalPrice(double originalPrice, DiscountStrategy strategy) => strategy(originalPrice);
+
 
     }
 }

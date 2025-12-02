@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            // question1
             CustomDelegate.Calculate calc = CustomDelegate.Add;
             Console.WriteLine("Addition: " + calc(10, 5));
 
@@ -11,18 +12,25 @@
             Console.WriteLine("Subtraction: " + calc(10, 5));
 
 
-            Console.WriteLine("\nDiscount Strategy Example (Question 2)\n");
+            Console.WriteLine("\n Discount Strategy Example \n");
 
-            CustomDelegate.DiscountStrategy discount;
+            double originalPrice = 1000;
 
-            discount = CustomDelegate.FestivalDiscount;
-            Console.WriteLine("Festival Discount: " + discount(1000));
+            // passing methods one by one
+            Console.WriteLine("Festival Discount Final Price: " +
+                CustomDelegate.CalculateFinalPrice(originalPrice, CustomDelegate.FestivalDiscount));
 
-            discount = CustomDelegate.SeasonalDiscount;
-            Console.WriteLine("Seasonal Discount: " + discount(1000));
+            Console.WriteLine("Seasonal Discount Final Price: " +
+                CustomDelegate.CalculateFinalPrice(originalPrice, CustomDelegate.SeasonalDiscount));
 
-            discount = CustomDelegate.NoDiscount;
-            Console.WriteLine("No Discount: " + discount(1000));
+            Console.WriteLine("No Discount Final Price: " +
+                CustomDelegate.CalculateFinalPrice(originalPrice, CustomDelegate.NoDiscount));
+
+
+            // using lambda for 30% discount
+            Console.WriteLine("\nLambda 30% Discount Final Price: " +
+                CustomDelegate.CalculateFinalPrice(originalPrice, price => price - (price * 0.30)));
+
         }
     }
 }
