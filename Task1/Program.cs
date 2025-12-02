@@ -17,9 +17,8 @@
             set => breadth = value;
         }
 
-        public static double GetArea(double length, double breadth) => length * breadth;
-        // {}
+        public double GetArea() => length * breadth;
         public string ShowDetails() => $"Length: {length}, Breadth: {breadth}";
-
+        public double GetPerimeter() => 2 * (length + breadth);
     }
 }
