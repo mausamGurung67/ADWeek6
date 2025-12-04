@@ -41,12 +41,12 @@
             // Question 3
             Student[] students =
             [
-            new Student("Rajendra", new DateOnly(2004, 12, 2), "Male"),
-            new Student("Ram", new DateOnly(2004, 3, 5), "Male"),
-            new Student("Hari", new DateOnly(2006, 7, 23), "Male"),
-            new Student("Shyam", new DateOnly(2005, 11, 9), "Female"),
-            new Student("Bishkek", new DateOnly(2004, 2, 17), "Male"),
-            new Student("Sita", new DateOnly(2006, 9, 30), "Female"),
+            new Student("Mausam", new DateOnly(2004, 12, 2), "Male"),
+            new Student("Rajendra", new DateOnly(2004, 3, 5), "Male"),
+            new Student("Hariyendra", new DateOnly(2006, 7, 23), "Male"),
+            new Student("Shyamendra", new DateOnly(2005, 11, 9), "Female"),
+            new Student("Bishkekendra", new DateOnly(2004, 2, 17), "Male"),
+            new Student("Sitendra", new DateOnly(2006, 9, 30), "Female"),
             new Student("Krishna", new DateOnly(2005, 4, 14), "Male"),
             new Student("Gita", new DateOnly(2004, 12, 1), "Female"),
             new Student("Irfan", new DateOnly(2006, 6, 8), "Male"),
